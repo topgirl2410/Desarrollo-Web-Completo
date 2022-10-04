@@ -53,7 +53,6 @@ body {
     }
 }
 
-
 .sombra {
     -webkit-box-shadow: 0px 0px 15px 0px rgba(112, 112, 112, 0.48);
     -moz-box-shadow: 0px 0px 15px 0px rgba(112, 112, 112, 0.48);
@@ -157,4 +156,15 @@ h3 {
 .ubicacion {
     display: flex;
     align-items: flex-end;
+}
+
+/** Servicios **/
+
+@media (min-width: 768px) {
+    .servicios {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /** 3 columnas de una fraccion cada una **/
+        column-gap: 3rem;
+    }
 }
